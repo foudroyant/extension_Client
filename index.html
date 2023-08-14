@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Djowyett Extension</title>
+   <meta http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'unsafe-inline' 'unsafe-eval'" /> 
+  <link rel="stylesheet" href="materialize.min.css">
+  <meta charset="utf-8" />
+  <style >
+    body {
+      width: 400px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="amber">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">My Renta</a>
+    </div>
+  </nav>
+
+
+<div class="container">
+  <h3 id="mensualite"  class="center">Loyer </h3>
+  <h5 id="renta_brute_auto" class="center"></h5>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <input placeholder="Taxe foncière" id="taxe" type="number" value="0">
+  </div>
+  
+    <h5 id="projet"></h5>
+    <h5 id="renta_nette_auto"></h5>
+
+  <div class="row">
+    <div class="input-field col s4">
+      <input placeholder="Nb" id="taxe" type="number" disabled>
+    </div>
+
+    <div class="input-field col s2">
+      <input placeholder="0" type="number" class="nb" value="0">
+    </div>
+    <div class="input-field col s2">
+      <input placeholder="0" type="number" class="nb" value="0">
+    </div>
+    <div class="input-field col s2">
+      <input placeholder="0" type="number" class="nb" value="0">
+    </div>
+    <div class="input-field col s2">
+      <input placeholder="0" type="number" class="nb" value="0">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s4">K(€)</div>
+    <div class="col s2 t">T1</div>
+    <div class="col s2 t">T2</div>
+    <div class="col s2 t">T3</div>
+    <div class="col s2 t">T4</div>
+  </div>
+
+  <div class="row">
+    <div class="col s4">Créa</div>
+    <div class="col s2 crea">35</div>
+    <div class="col s2 crea">45</div>
+    <div class="col s2 crea">58</div>
+    <div class="col s2 crea">70</div>
+  </div>
+
+  <div class="row">
+    <div class="col s4">Réno</div>
+    <div class="col s2 reno">25</div>
+    <div class="col s2 reno">30</div>
+    <div class="col s2 reno">38</div>
+    <div class="col s2 reno">45</div>
+  </div>
+
+  <div class="row">
+    <div class="col s4">Rafr</div>
+    <div class="col s2 rafr">13</div>
+    <div class="col s2 rafr">15</div>
+    <div class="col s2 rafr">19</div>
+    <div class="col s2 rafr">23</div>
+  </div>
+
+  <div class="row">
+    <div class="col s4">Neuf</div>
+    <div class="col s2 neuf">0</div>
+    <div class="col s2 neuf">0</div>
+    <div class="col s2 neuf">0</div>
+    <div class="col s2 neuf">0</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <button class="col s4 offset-s1 btn black-text white rentable_btn" id="rentable">Rentable</button>
+    <button class="col s4 offset-s2 btn black-text white rentable_btn" id="non_rentable" style="text-decoration: line-through;">Rentable</button>
+  </div>
+</div>
+  
+
+  
+  <script src="event.js">
+  </script>
+</body>
+</html>
